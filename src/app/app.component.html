@@ -1,1 +1,28 @@
-<app-login></app-login>
+<!-- <app-login></app-login> -->
+
+
+
+<mat-card class="widget" appearance="outlined">
+  
+    <img class="logo" src="../../assets/download.png" >
+    <router-outlet></router-outlet>
+  </mat-card>
+  <div class="footer">
+    <mat-form-field class="btm" appearance="fill" >
+      <mat-select [value]="'en-US'">
+        <mat-option class="opt" value="en-US">English (United States)</mat-option>
+        <mat-option class="opt" value="fr">French</mat-option>
+        <mat-option class="opt" value="de">German</mat-option>
+        <mat-option class="opt" value="it">Italian</mat-option>
+        <mat-option class="opt" value="es">Spanish</mat-option>
+        <mat-option class="opt" value="pt">Portuguese</mat-option>
+        <mat-option class="opt" value="ja">Japanese</mat-option>
+        <mat-option class="opt" value="ko">Korean</mat-option>
+      </mat-select>
+    </mat-form-field>
+  
+    <button mat-button class="footer-btn">Help</button>
+    <button mat-button>Privacy</button>
+    <button mat-button>Terms</button>
+  </div>
+  
