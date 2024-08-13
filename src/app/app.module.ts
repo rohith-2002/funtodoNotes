@@ -14,13 +14,20 @@ import {MatInputModule} from '@angular/material/input';
 import { RegisterComponent } from './register/register.component';
 import {MatSelectModule} from '@angular/material/select';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { WidgetComponent } from './widget/widget.component';
+import { CommonModule } from '@angular/common';
+import { BasicinformationComponent } from './basicinformation/basicinformation.component';
+import { BasicinformationAComponent } from './basicinformation-a/basicinformation-a.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    WidgetComponent,
+    BasicinformationComponent,
+    BasicinformationAComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +40,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatDividerModule,
     MatInputModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    CommonModule
 
 
     

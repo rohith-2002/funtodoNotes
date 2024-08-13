@@ -1,0 +1,99 @@
+.widget{
+    margin-left: 200px;
+    margin-right: 200px;
+    width:auto;
+    border-radius: 28px;
+    margin-top: 100px;
+    padding-top: 20px;
+    
+}
+.logo{
+    width: 48px;
+    height: 48px;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+// ::ng-deep .mat-card {
+//     padding-bottom: 0px;
+//     margin-bottom: 0px;
+// }
+::ng-deep .mat-card-actions{
+    padding-bottom: 0px;
+    margin-bottom: 0px !important;
+}
+.action-btn{
+    display: flex;
+    margin-top: 30px;
+}
+.centerdiv{
+    padding: 36px;
+    display: flex;
+    padding-bottom: 0px;
+}
+.rightdiv{
+    width: 404px;
+    margin-right: 20px;
+}
+.leftdiv{
+    padding-left: 24px;
+}
+mat-form-field{
+    width:380px;
+    padding-bottom: none !important;
+   
+}
+mat-form-field{
+    padding-bottom: 0px !important;
+}
+span{
+    font-size: 16px;
+}
+.forgetemail{
+   color: #0b57d0;
+}
+// :host {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+::ng-deep .mat-form-field-wrapper {
+    padding-bottom: 3px !important;
+    
+  }
+  .footsection{
+    margin-top: 35px;
+  }
+  ::ng-deep .mat-form-field-underline {
+    display: none !important;
+  }
+  .btm{
+    margin-left: 200px;
+    width:200px;
+    margin-top: 5px;
+  }
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex {
+    background-color: #f0f4f9;
+  }
+ ::ng-deep .mat-select-arrow-wrapper{
+   display: block !important;
+ }
+//   ::ng-deep .mat-select-value-text{
+   
+//   }
+  .footer{
+    display: block ;
+  }
+  .btm{
+    padding-top: -5px;
+  }
+  ::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+        padding-top: 0rem !important;
+  }
+.footer button{
+    font-weight: 200;
+    font-size: 12px;
+}
+.footer-btn{
+    margin-left: 420px;
+}
