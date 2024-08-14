@@ -17,7 +17,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { WidgetComponent } from './widget/widget.component';
 import { CommonModule } from '@angular/common';
 import { BasicinformationComponent } from './basicinformation/basicinformation.component';
-import { BasicinformationAComponent } from './basicinformation-a/basicinformation-a.component';
+import {FormsModule} from '@angular/forms';
+
 
 
 @NgModule({
@@ -27,7 +28,7 @@ import { BasicinformationAComponent } from './basicinformation-a/basicinformatio
     RegisterComponent,
     WidgetComponent,
     BasicinformationComponent,
-    BasicinformationAComponent
+  
   ],
   imports: [
     BrowserModule,
@@ -41,7 +42,8 @@ import { BasicinformationAComponent } from './basicinformation-a/basicinformatio
     MatInputModule,
     MatSelectModule,
     MatFormFieldModule,
-    CommonModule
+    CommonModule,
+    FormsModule
 
 
     
