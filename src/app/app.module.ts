@@ -18,6 +18,14 @@ import { WidgetComponent } from './widget/widget.component';
 import { CommonModule } from '@angular/common';
 import { BasicinformationComponent } from './basicinformation/basicinformation.component';
 import {FormsModule} from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { PasswordComponent } from './password/password.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { NavbarComponent } from './navbar/navbar.component'; // Import ReactiveFormsModule
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { HttpClientModule } from '@angular/common/http';
+import { MatSidenavModule} from '@angular/material/sidenav';
+
 
 
 
@@ -28,6 +36,9 @@ import {FormsModule} from '@angular/forms';
     RegisterComponent,
     WidgetComponent,
     BasicinformationComponent,
+    PasswordComponent,
+    DashboardComponent,
+    NavbarComponent,
   
   ],
   imports: [
@@ -43,7 +54,14 @@ import {FormsModule} from '@angular/forms';
     MatSelectModule,
     MatFormFieldModule,
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    MatToolbarModule,
+    MatSidenavModule,
+   
+    
+
 
 
     

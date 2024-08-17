@@ -8,5 +8,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'fundooNotes';
+  islogin=false;
+  
   
 }

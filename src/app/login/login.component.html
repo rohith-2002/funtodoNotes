@@ -5,12 +5,15 @@
    <span>Use your Google Account</span  >
   </div>
   <div class="leftdiv" >
-    <form>
+    <form  [formGroup]="loginForm" >
       <mat-form-field appearance="outline">
           <mat-label>Email or Phone</mat-label>
-          <input matInput placeholder="Email">
+          <input matInput placeholder="Email" formControlName="email">
+          
       </mat-form-field>
-      
+      <div *ngIf="loginForm.get('email')?.invalid && (loginForm.get('email')?.dirty || loginForm.get('email')?.touched)" style="color: red;">
+        Please provide a valid email address.
+      </div>
   </form>  
   <a class="forgetemail"> Forget email?</a> 
   <div class="footsection">
@@ -29,7 +32,7 @@
     </div>
     <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
       <a
-        style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;">
+        style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;" (click)="handleLogin()">
         <!-- <mat-icon>favorit</mat-icon> -->
         <span>Next</span>
   
