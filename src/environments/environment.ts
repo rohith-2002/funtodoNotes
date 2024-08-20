@@ -4,6 +4,7 @@
 
 export const environment = {
   production: false
+  // APIBaseUrl:"http://fundoonotes.incubation.bridgelabz.com/api/"
 };
 
 /*

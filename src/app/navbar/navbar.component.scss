@@ -1,0 +1,65 @@
+.avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+  }
+ .searchhhh{
+    width: 200px;
+ }
+  .logo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+ 
+  mat-form-field {
+    width: 50%;
+    height:auto;
+    background-color:white;
+  }
+ 
+  mat-icon{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+ 
+  .refersh{
+    margin-left: 150px;
+  }
+ 
+  .apps{
+    margin-left: 20px;
+  }
+ 
+  ::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin:0;
+}
+ 
+::ng-deep .mat-form-field-wrapper {
+padding-bottom: 0;
+}
+ 
+.searchBar{
+    width: 10%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ 
+::ng-deep .mat-form-field-flex {
+    display: inline-flex;
+    align-items: baseline;
+    /* box-sizing: border-box; */
+     width: 100% !important;
+    //  margin-top: 10px !important;
+    //  margin-left: 100px !important;
+     height:50px !important;
+}
+ 
+ ::ng-deep .mat-form-field-infix,.mat-form-field-appearance-outline .mat-form-field-infix{
+  padding: 0px !important;
+ }
+
+ ::ng-deep .mat-form-field .ng-tns-c82-0 .mat-primary .mat-form-field-type-mat-input .mat-form-field-appearance-outline .mat-form-field-can-float .ng-star-inserted{
+    margin-left: 150px !important;
+ }
+ 

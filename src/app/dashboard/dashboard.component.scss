@@ -1,0 +1,24 @@
+.dashboard-bdy{
+    display: flex;
+    height: auto;
+    width: 100px;
+    margin-top: 60px;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.content{
+    margin-left: 220px;
+}
+
+.Sidebaar{
+    position: fixed;
+    z-index: 1000;
+    top: 60px; /* Adjust based on the height of your navbar */
+    height: 100%; /* Ensure it spans the full height of the viewport */
+    width: 200px; 
+
+}
