@@ -31,6 +31,7 @@ import { NoteCardComponent } from './note-card/note-card.component';
 import { NoteComponentComponent } from './note-component/note-component.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { TrashComponent } from './trash/trash.component';
+import { AddnoteComponent } from './addnote/addnote.component';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { TrashComponent } from './trash/trash.component';
     NoteCardComponent,
     NoteComponentComponent,
     ArchiveComponent,
-    TrashComponent
+    TrashComponent,
+    AddnoteComponent
    
   
   ],

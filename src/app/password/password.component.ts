@@ -34,7 +34,7 @@ export class PasswordComponent implements OnInit {
        console.log("response",id);
        localStorage.setItem("access_token",id);
         this.appComponent.islogin=true;
-       this.route.navigate(['./dashboard/']);
+       this.route.navigate(['./dashboard/notes']);
       },
       error:(err: any) => {
         console.log("response",err);

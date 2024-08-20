@@ -15,4 +15,8 @@ export class HttpserviceService {
   getAPICall(endpoint:String,headers:any){
     return this.http.get(this.Base_url+endpoint,headers);
   }
+ postNoteAPIcall(endpoint:string,data:any,headers:any){
+  return this.http.post(this.Base_url+endpoint,data,headers);
+ }
+
 }

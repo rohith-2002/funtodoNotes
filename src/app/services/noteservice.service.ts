@@ -14,4 +14,10 @@ export class NoteserviceService {
     const headers= new HttpHeaders({'Authorization':`${access_token}`});
     return this.httpservice.getAPICall(`${this.path_url}${url}`,{headers:headers});
   }
+
+  addNotes(url:any,data:any){
+    const access_token = localStorage.getItem('access_token'); 
+    const headers= new HttpHeaders({'Authorization':`${access_token}`});
+    return this.httpservice.postNoteAPIcall(`${this.path_url}${url}`,data,{headers:headers});
+  }
 }

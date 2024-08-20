@@ -1,9 +1,4 @@
-<mat-card appearance="outlined" class="addnote">
-   <input type="text" placeholder="Take a note.." class="search">
-   <mat-icon >check_box</mat-icon>
-   <mat-icon >brush</mat-icon>
-   <mat-icon >image</mat-icon>
-</mat-card>
+
 <div class="note_container">
     <div *ngFor="let note of notesList " >
         <app-note-card [note]="note" [backgroundColor]="note.backgroundColor"></app-note-card>
