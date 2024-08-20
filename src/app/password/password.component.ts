@@ -3,6 +3,7 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
 import { LoginserviceService } from '../services/loginservice.service';
 import { UserServiceService } from '../services/user-service.service';
 import { Router } from '@angular/router';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-password',
@@ -11,7 +12,9 @@ import { Router } from '@angular/router';
 })
 export class PasswordComponent implements OnInit {
   passForm!:FormGroup;
-  constructor(private pb:FormBuilder,private LoginServiceService:LoginserviceService,private userService:UserServiceService,private route:Router) { }
+  constructor(private pb:FormBuilder,private LoginServiceService:LoginserviceService,private userService:UserServiceService,private route:Router,
+    private appComponent:AppComponent
+  ) { }
 
   ngOnInit(): void {
     this.passForm=this.pb.group({
@@ -30,6 +33,7 @@ export class PasswordComponent implements OnInit {
        const {id} = res;
        console.log("response",id);
        localStorage.setItem("access_token",id);
+        this.appComponent.islogin=true;
        this.route.navigate(['./dashboard/']);
       },
       error:(err: any) => {
