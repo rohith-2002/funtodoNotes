@@ -5,6 +5,9 @@ import { RegisterComponent } from './register/register.component';
 import { BasicinformationComponent } from './basicinformation/basicinformation.component';
 import { PasswordComponent } from './password/password.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { NoteComponentComponent } from './note-component/note-component.component';
+import { ArchiveComponent } from './archive/archive.component';
+import { TrashComponent } from './trash/trash.component';
 
 const routes: Routes = [
   {path:"",
@@ -20,7 +23,19 @@ const routes: Routes = [
     component:PasswordComponent
   },{
     path:"dashboard",
-    component:DashboardComponent
+    component:DashboardComponent,
+    children:[
+      {
+        path:"notes",
+        component:NoteComponentComponent
+      },{
+        path:"archive",
+        component:ArchiveComponent
+      },{
+        path:"trash",
+        component:TrashComponent
+      }
+    ]
   }
 ];
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-note-card',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class NoteCardComponent implements OnInit {
 
   constructor() { }
+  @Input()note:any;
+  @Input() backgroundColor?: string;
 
   ngOnInit(): void {
   }

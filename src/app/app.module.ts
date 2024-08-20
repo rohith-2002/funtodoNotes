@@ -25,8 +25,12 @@ import { NavbarComponent } from './navbar/navbar.component'; // Import ReactiveF
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { HttpClientModule } from '@angular/common/http';
 import { MatSidenavModule} from '@angular/material/sidenav';
-
-
+import { SidebarComponent } from './sidebar/sidebar.component';
+import{MatListModule} from '@angular/material/list';
+import { NoteCardComponent } from './note-card/note-card.component';
+import { NoteComponentComponent } from './note-component/note-component.component';
+import { ArchiveComponent } from './archive/archive.component';
+import { TrashComponent } from './trash/trash.component';
 
 
 @NgModule({
@@ -39,6 +43,12 @@ import { MatSidenavModule} from '@angular/material/sidenav';
     PasswordComponent,
     DashboardComponent,
     NavbarComponent,
+    SidebarComponent,
+    NoteCardComponent,
+    NoteComponentComponent,
+    ArchiveComponent,
+    TrashComponent
+   
   
   ],
   imports: [
@@ -59,6 +69,7 @@ import { MatSidenavModule} from '@angular/material/sidenav';
     ReactiveFormsModule,
     MatToolbarModule,
     MatSidenavModule,
+    MatListModule
    
     
 
@@ -66,7 +77,9 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 
     
   ],
-  providers: [],
+  providers: [
+    AppComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

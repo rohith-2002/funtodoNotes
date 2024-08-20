@@ -3,7 +3,9 @@
     height: 24px;
     border-radius: 50%;
   }
- 
+ .searchhhh{
+    width: 200px;
+ }
   .logo{
     width: 50px;
     height: 50px;
@@ -22,7 +24,7 @@
   }
  
   .refersh{
-    margin-left: 210px;
+    margin-left: 150px;
   }
  
   .apps{
@@ -48,10 +50,16 @@ padding-bottom: 0;
     align-items: baseline;
     /* box-sizing: border-box; */
      width: 100% !important;
-     margin-top: 10px !important;
-     margin-left: 100px !important;
+    //  margin-top: 10px !important;
+    //  margin-left: 100px !important;
      height:50px !important;
 }
  
- 
+ ::ng-deep .mat-form-field-infix,.mat-form-field-appearance-outline .mat-form-field-infix{
+  padding: 0px !important;
+ }
+
+ ::ng-deep .mat-form-field .ng-tns-c82-0 .mat-primary .mat-form-field-type-mat-input .mat-form-field-appearance-outline .mat-form-field-can-float .ng-star-inserted{
+    margin-left: 150px !important;
+ }
  
