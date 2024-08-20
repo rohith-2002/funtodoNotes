@@ -9,7 +9,7 @@ export class NoteCardComponent implements OnInit {
 
   constructor() { }
   @Input()note:any;
-  @Input() backgroundColor?: string;
+  @Input()backgroundColor?: string;
 
   ngOnInit(): void {
   }
