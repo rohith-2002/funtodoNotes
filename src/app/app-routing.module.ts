@@ -18,6 +18,9 @@ const routes: Routes = [
     path:"register",
     component:WidgetComponent
   },{
+    path:"emailpass",
+    component:WidgetComponent
+  },{
     path:"info",
     component:WidgetComponent
   },{

@@ -32,6 +32,7 @@ import { NoteComponentComponent } from './note-component/note-component.componen
 import { ArchiveComponent } from './archive/archive.component';
 import { TrashComponent } from './trash/trash.component';
 import { AddnoteComponent } from './addnote/addnote.component';
+import { EmailpassComponent } from './emailpass/emailpass.component';
 
 
 @NgModule({
@@ -49,7 +50,8 @@ import { AddnoteComponent } from './addnote/addnote.component';
     NoteComponentComponent,
     ArchiveComponent,
     TrashComponent,
-    AddnoteComponent
+    AddnoteComponent,
+    EmailpassComponent
    
   
   ],
