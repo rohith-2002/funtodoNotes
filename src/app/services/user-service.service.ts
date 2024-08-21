@@ -13,6 +13,7 @@ export class UserServiceService {
   constructor(private Httpservice: HttpserviceService) { }
      
      loginAPIcall(data:any){
+      console.log("data",data);
       return this.Httpservice.postAPIcall("/user/login",data);
      } 
   // Remove the closing curly brace

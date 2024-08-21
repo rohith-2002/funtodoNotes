@@ -23,17 +23,19 @@ export class PasswordComponent implements OnInit {
   }
   handleLogin(){
     if(this.passForm.invalid) return;
-    const {email, password}=this.passForm.value;
-    this.LoginServiceService.setPassword(password);
-    const email1=this.LoginServiceService.getEmail();
-    console.log(email1);
-    console.log(email1,password);
-    this.userService.loginAPIcall({email:"qwerty123@samp.com",password:"qwerty123"}).subscribe({
+    const {email1,pass}=this.passForm.value;
+    this.LoginServiceService.setPassword(pass);
+    const email=this.LoginServiceService.getEmail();
+    const password=this.LoginServiceService.getPassword();
+    // console.log(email1);
+    // console.log(password1);
+    console.log(email1,pass);
+    this.userService.loginAPIcall({email,password}).subscribe({
       next:(res:any)=>{
        const {id} = res;
        console.log("response",id);
        localStorage.setItem("access_token",id);
-        this.appComponent.islogin=true;
+        
        this.route.navigate(['./dashboard/notes']);
       },
       error:(err: any) => {

@@ -9,19 +9,20 @@ import { NoteComponentComponent } from './note-component/note-component.componen
 import { ArchiveComponent } from './archive/archive.component';
 import { TrashComponent } from './trash/trash.component';
 import { AuthGuard } from './services/auth.guard';
+import { WidgetComponent } from './widget/widget.component';
 
 const routes: Routes = [
   {path:"",
-    component:LoginComponent
+    component:WidgetComponent
   },{
     path:"register",
-    component:RegisterComponent
+    component:WidgetComponent
   },{
     path:"info",
-    component:BasicinformationComponent
+    component:WidgetComponent
   },{
     path:"pass",
-    component:PasswordComponent
+    component:WidgetComponent
   },{
     path:"dashboard",
     component:DashboardComponent,
