@@ -1,0 +1,34 @@
+
+<div class="widget">
+    <div class="leftdiv">
+        <h1>Create a Google Account</h1>
+        <span>Enter your name</span  >
+    </div>
+    <div class="rightdiv">
+        <form [formGroup]="emailpassForm"> 
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>email</mat-label>
+                <input matInput placeholder="First Name" formControlName="email">
+            </mat-form-field>
+            <div *ngIf="emailpassForm.get('email')?.invalid && (emailpassForm.get('email')?.dirty || emailpassForm.get('email')?.touched)" style="color: red;">
+                email is required
+            </div>
+            <br>
+            
+            <mat-form-field appearance="outline" class="form-field">
+                <mat-label>password</mat-label>
+                <input matInput placeholder="Last Name" formControlName="password">
+            </mat-form-field>
+            
+        </form>
+
+        <div class="" style="display: flex; justify-content: end; text-align: center; font-weight: 400; margin-bottom: 30px; margin-right: 15px;">
+            <a
+              style="width: 80px; height: 40px; border-radius: 30px; background-color: #0b57d0; box-shadow: none; color: white; align-content: center;" (click)="signUp()">
+              <!-- <mat-icon>favorit</mat-icon> -->
+              <span>Next</span>
+
+            </a>
+          </div>
+    </div>
+</div>
