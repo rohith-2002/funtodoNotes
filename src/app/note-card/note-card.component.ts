@@ -13,5 +13,11 @@ export class NoteCardComponent implements OnInit {
 
   ngOnInit(): void {
   }
+  
+  deleteicon(){
+    console.log(this.note);
+    const noteid=this.note.isDeleted;
+    console.log(noteid);
+  }
 
 }

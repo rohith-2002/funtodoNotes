@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,Input } from '@angular/core';
 import { NoteserviceService } from '../services/noteservice.service';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-note-component',
@@ -8,11 +9,11 @@ import { NoteserviceService } from '../services/noteservice.service';
 })
 export class NoteComponentComponent implements OnInit {
   notesList:any=[];
-
+ @Input() searchText:any;
   neutralTones = [
    '#f5f5f5', '#e0e0e0', '#d6d6d6', '#cccccc', '#b3b3b3'
   ];
-  constructor( private noteservice:NoteserviceService) { }
+  constructor( private noteservice:NoteserviceService,private dataservice:DataService) { }
 
   ngOnInit(): void {
     this.noteservice.getAllNotes("getNotesList").subscribe({
@@ -27,6 +28,9 @@ export class NoteComponentComponent implements OnInit {
       },error:(err:any)=>{
         console.log(err);
       }
+    });
+    this.dataservice.currentMessage.subscribe((message) => {
+          this.searchText =message ;
     });
   }
   getRandomNeutralTone() {

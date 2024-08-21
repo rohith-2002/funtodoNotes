@@ -10,7 +10,7 @@
   </div>
   <mat-form-field appearance="outline">
     <mat-icon>search</mat-icon>
-         <input matInput>
+         <input matInput [(ngModel)]="searchText" (ngModelChange)="onsearch()">
          <button class="searchBar" mat-icon-button matSuffix></button>
  </mat-form-field>
     

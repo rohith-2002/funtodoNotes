@@ -33,6 +33,7 @@ import { ArchiveComponent } from './archive/archive.component';
 import { TrashComponent } from './trash/trash.component';
 import { AddnoteComponent } from './addnote/addnote.component';
 import { EmailpassComponent } from './emailpass/emailpass.component';
+import { SearchPipe } from './pipe/search.pipe';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { EmailpassComponent } from './emailpass/emailpass.component';
     ArchiveComponent,
     TrashComponent,
     AddnoteComponent,
-    EmailpassComponent
+    EmailpassComponent,
+    SearchPipe
    
   
   ],

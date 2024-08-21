@@ -1,6 +1,6 @@
 
 <div class="note_container">
-    <div *ngFor="let note of notesList " >
+    <div *ngFor="let note of notesList | search:searchText " >
         <app-note-card [note]="note" [backgroundColor]="note.backgroundColor"></app-note-card>
     </div>
 </div>

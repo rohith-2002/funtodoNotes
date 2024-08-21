@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../services/data.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  
-  constructor() { }
+  searchText:string='';
+  constructor(private dataservice:DataService) { }
 
   ngOnInit(): void {
   }
+  
+  onsearch(){
+    console.log(this.searchText);
+    this.dataservice.sendData(this.searchText);
+  }
+
 
 }
